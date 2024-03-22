@@ -231,7 +231,14 @@ public class InterfazUsuario extends javax.swing.JFrame {
         maxTimer = new javax.swing.JLabel();
         Resultado = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -297,7 +304,7 @@ public class InterfazUsuario extends javax.swing.JFrame {
         });
         contenedor6.setViewportView(listaAvatar2);
 
-        jPanel1.add(contenedor6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 124, -1));
+        jPanel1.add(contenedor6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, 124, -1));
 
         listaAvatar3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -306,7 +313,7 @@ public class InterfazUsuario extends javax.swing.JFrame {
         });
         contenedor7.setViewportView(listaAvatar3);
 
-        jPanel1.add(contenedor7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, 124, -1));
+        jPanel1.add(contenedor7, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 124, -1));
 
         listaAvatar4.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -326,13 +333,15 @@ public class InterfazUsuario extends javax.swing.JFrame {
         TitleIA.setText("INTELIGENCIA ARTIFICIAL");
         jPanel1.add(TitleIA, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, -1));
 
-        Decision.setText("jTextField1");
+        Decision.setEditable(false);
+        Decision.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Decision.setText("Decidiendo");
         Decision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DecisionActionPerformed(evt);
             }
         });
-        jPanel1.add(Decision, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 71, -1));
+        jPanel1.add(Decision, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 200, 90, -1));
 
         luchador1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         luchador1.setText("Luchador Un Show Mas");
@@ -342,7 +351,7 @@ public class InterfazUsuario extends javax.swing.JFrame {
         jPanel1.add(luchador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 100, -1));
 
         vs.setText("VS");
-        jPanel1.add(vs, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 350, 30, -1));
+        jPanel1.add(vs, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 20, -1));
 
         minTimer.setText("1");
         jPanel1.add(minTimer, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 12, 40));
@@ -357,12 +366,33 @@ public class InterfazUsuario extends javax.swing.JFrame {
         maxTimer.setText("10");
         jPanel1.add(maxTimer, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 100, 30, 40));
 
-        Resultado.setText("jLabel4");
-        jPanel1.add(Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, 50, -1));
+        Resultado.setText("Resultado:");
+        jPanel1.add(Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 80, -1));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 640, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo_de_Avatar_la_leyenda_de_Aang.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 100, 120, 70));
+        jLabel3.setText("Nivel 3");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, -1, -1));
+
+        jLabel4.setText("Nivel 1");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, -1));
+
+        jLabel5.setText("Refuerzo");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, -1, -1));
+
+        jLabel6.setText("Nivel 2");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, -1, -1));
+
+        jLabel7.setText("Nivel 2");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 510, -1, -1));
+
+        jLabel8.setText("Nivel 3");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, -1, -1));
+
+        jLabel9.setText("Nivel 1");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, -1, -1));
+
+        jLabel10.setText("Refuerzo");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 510, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -452,7 +482,14 @@ public class InterfazUsuario extends javax.swing.JFrame {
     private javax.swing.JScrollPane contenedor7;
     private javax.swing.JScrollPane contenedor8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JList<String> listaAvatar1;
     private javax.swing.JList<String> listaAvatar2;
